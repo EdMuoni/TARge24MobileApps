@@ -11,8 +11,8 @@ namespace SciCalc
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Cair-Light.ttf", "RegularFont");
+                    fonts.AddFont("Cair-ExtraLight.ttf", "LightFont");
                 });
 
 #if DEBUG
