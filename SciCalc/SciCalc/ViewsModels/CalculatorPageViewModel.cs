@@ -21,7 +21,7 @@ namespace SciCalc.ViewsModels
         private void Reset()
         {
             CalculatedResult = "0";
-            inputText = string.Empty;
+            InputText = string.Empty;
             isSciOpWaiting = false;
         }
 
