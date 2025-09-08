@@ -72,6 +72,12 @@
 	  <Folder Include="Resources\Fonts\" />
 	</ItemGroup>
 
+	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0-windows10.0.19041.0'">
+	  <PackageReference Include="HappyStudio.Mvvm.Input.Wpf">
+	    <Version>1.0.1</Version>
+	  </PackageReference>
+	</ItemGroup>
+
 	<ItemGroup>
 	  <MauiXaml Update="Views\CalculatorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>

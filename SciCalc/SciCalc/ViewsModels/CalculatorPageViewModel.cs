@@ -1,7 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Microsoft.AspNetCore.Components.Forms;
-using Microsoft.Maui.Controls.Compatibility;
+
 
 namespace SciCalc.ViewsModels
 {
