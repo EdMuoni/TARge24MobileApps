@@ -5,7 +5,7 @@ using CommunityToolkit.Mvvm.Input;
 namespace SciCalc.ViewsModels
 {
     [INotifyPropertyChanged]
-    internal partial class CalculatorPageViewModel : ObservableObject
+    internal partial class CalculatorPageViewModel 
     // :ObservableObject
     {
         [ObservableProperty]
