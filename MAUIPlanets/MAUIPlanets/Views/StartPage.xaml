@@ -6,25 +6,25 @@
 
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#666" Offset="0.0" />
-            <GradientStop Color="#000" Offset="1.0" />
+            <GradientStop Color="#666" Offset="0.0"/>
+            <GradientStop Color="#000" Offset="1.0"/>
         </LinearGradientBrush>
     </ContentPage.Background>
 
     <Grid>
-        <!--Planets images-->
-        <Image
+        <!--Planet images-->
+        <Image 
             x:Name="imgEarth"
             Opacity="0"
             Source="earth.png"
             VerticalOptions="Start"
             HorizontalOptions="Center"
-            TranslationY="148"
             TranslationX="-48"
+            TranslationY="148"
             WidthRequest="96"
             HeightRequest="96"/>
-        
-        <Image
+
+        <Image 
             x:Name="imgJupiter"
             Opacity="0"
             Source="jupiter.png"
@@ -34,8 +34,8 @@
             TranslationY="-64"
             WidthRequest="200"
             HeightRequest="200"/>
-        
-        <Image
+
+        <Image 
             x:Name="imgSaturn"
             Opacity="0"
             Source="saturn.png"
@@ -45,8 +45,8 @@
             TranslationY="76"
             WidthRequest="300"
             HeightRequest="300"/>
-        
-        <Image
+
+        <Image 
             x:Name="imgMars"
             Opacity="0"
             Source="mars.png"
@@ -56,8 +56,8 @@
             TranslationY="96"
             WidthRequest="140"
             HeightRequest="140"/>
-        
-        <Image
+
+        <Image 
             x:Name="imgMercury"
             Opacity="0"
             Source="mercury.png"
@@ -67,8 +67,8 @@
             TranslationY="72"
             WidthRequest="66"
             HeightRequest="66"/>
-        
-        <Image
+
+        <Image 
             x:Name="imgVenus"
             Opacity="0"
             Source="venus.png"
@@ -79,7 +79,7 @@
             WidthRequest="76"
             HeightRequest="76"/>
         
-        <Image
+        <Image 
             x:Name="imgUranus"
             Opacity="0"
             Source="uranus.png"
@@ -89,20 +89,19 @@
             TranslationY="-72"
             WidthRequest="200"
             HeightRequest="200"/>
-        
-        <Image
+
+        <Image 
             x:Name="imgNeptune"
             Opacity="0"
-            Source="neptun.png"
+            Source="neptune.png"
             VerticalOptions="Start"
             HorizontalOptions="End"
             TranslationX="100"
             TranslationY="-72"
             WidthRequest="200"
             HeightRequest="200"/>
-
+        
         <!--Intro box-->
-        
-        
+
     </Grid>
 </ContentPage>
