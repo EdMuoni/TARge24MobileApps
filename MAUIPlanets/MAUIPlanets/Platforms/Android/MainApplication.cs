@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace MAUIPlanets
+namespace MauiPlanets
 {
     [Application]
     public class MainApplication : MauiApplication

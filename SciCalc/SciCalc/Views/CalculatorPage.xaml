@@ -243,5 +243,122 @@
             Text=")"
             Command="{Binding ScientificOperatorCommand}"
             CommandParameter=")"/>
+
+        <!--Row 4-->
+
+        <Button 
+            Grid.Row="6"
+            Grid.Column="0"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="7"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="7"/>
+
+        <Button 
+            Grid.Row="6"
+            Grid.Column="1"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="8"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="8"/>
+
+        <Button 
+            Grid.Row="6"
+            Grid.Column="2"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="9"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="9"/>
+        
+        <!--Row 5-->
+
+        <Button 
+            Grid.Row="7"
+            Grid.Column="0"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="4"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="4"/>
+
+        <Button 
+            Grid.Row="7"
+            Grid.Column="1"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="5"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="5"/>
+
+        <Button 
+            Grid.Row="7"
+            Grid.Column="2"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="6"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="6"/>
+        
+        <!--Row 6-->
+
+        <Button 
+            Grid.Row="8"
+            Grid.Column="0"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="1"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="1"/>
+
+        <Button 
+            Grid.Row="8"
+            Grid.Column="1"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="2"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="2"/>
+
+        <Button 
+            Grid.Row="8"
+            Grid.Column="2"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="3"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="3"/>
+
+        <!--Row 7-->
+
+        <Button 
+            Grid.Row="9"
+            Grid.Column="0"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="1"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="1"/>
+
+        <Button 
+            Grid.Row="9"
+            Grid.Column="1"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="2"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="2"/>
+
+        <Button 
+            Grid.Row="9"
+            Grid.Column="2"
+            ZIndex="1"
+            Style="{StaticResource ScientificOperatorButtonStyle}"
+            Text="3"
+            Command="{Binding ScientificOperatorCommand}"
+            CommandParameter="3"/>
+
     </Grid>
 </ContentPage>
