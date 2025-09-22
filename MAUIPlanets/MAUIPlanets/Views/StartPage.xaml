@@ -78,7 +78,7 @@
             TranslationY="208"
             WidthRequest="76"
             HeightRequest="76"/>
-        
+
         <Image 
             x:Name="imgUranus"
             Opacity="0"
@@ -100,8 +100,47 @@
             TranslationY="-72"
             WidthRequest="200"
             HeightRequest="200"/>
-        
+
         <!--Intro box-->
+        <Border
+            x:Name="imgIntro"
+            Opacity="0"
+            Padding="24,32"
+            BackgroundColor="{StaticResource FrameBackgroundColor}"
+            Stroke="{StaticResource BorderColor}"
+            HorizontalOptions="Fill"
+            VerticalOptions="End"
+            Margin="20">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="24" />
+            </Border.StrokeShape>
+
+            <VerticalStackLayout
+                Spacing="16">
+
+                <Label 
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    Style="{StaticResource IntroPageHeaderStyle}"
+                    Text="Hello!" />
+
+                <Label 
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    LineBreakMode="WordWrap"
+                    Style="{StaticResource IntroPageHeaderStyle}"
+                    Text="Want to know and explain all things about the palnets in the solar system?"/>
+
+                <Button 
+                    HorizontalOptions="Center"
+                    Margin="0,12,0,6"
+                    Style="{StaticResource ButtonStyle}"
+                    Text="Explore Now"
+                    Clicked="ExploreNow_Clicked"/>
+            </VerticalStackLayout>
+
+        </Border>
 
     </Grid>
+
 </ContentPage>
