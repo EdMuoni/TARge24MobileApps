@@ -2,11 +2,10 @@
 using CommunityToolkit.Mvvm.Input;
 
 
-namespace SciCalc.ViewsModels
+namespace SciCalc.ViewModels
 {
     [INotifyPropertyChanged]
-    internal partial class CalculatorPageViewModel 
-    // :ObservableObject
+    internal partial class CalculatorPageViewModel //: ObservableObject
     {
         [ObservableProperty]
         private string inputText = string.Empty;
@@ -44,15 +43,10 @@ namespace SciCalc.ViewsModels
                 var expression = new NCalc.Expression(inputString);
                 var result = expression.Evaluate();
 
-
-                CalculatedResult = calculatedResult.ToString();
+                CalculatedResult = result.ToString();
             }
-
-
-
             catch (Exception ex)
             {
-
                 CalculatedResult = "NaN";
             }
         }
@@ -61,35 +55,30 @@ namespace SciCalc.ViewsModels
         {
             Dictionary<string, string> _opMapper = new()
             {
-
-            {"×", "*"},
-            {"÷", "/"},
-            {"SIN", "Sin"},
-            {"COS", "Cos"},
-            {"TAN", "Tan"},
-            {"ASIN", "Asin"},
-            {"ACOS", "Acos"},
-            {"ATAN", "Atan"},
-            {"LOG", "Log"},
-            {"EXP", "Exp"},
-            {"LOG", "Log10"},
-            {"^", "Pow"},
-            {"√", "Sqrt"},
-            {"ABS", "Abs"},
-            {"(", "("},
-            {")", ")"},
-            {"π", Math.PI.ToString()},
-            {"e", Math.E.ToString()},
-
+                {"×", "*"},
+                {"÷", "/"},
+                {"SIN", "Sin"},
+                {"COS", "Cos"},
+                {"TAN", "Tan"},
+                {"ASIN", "Asin"},
+                {"ACOS", "Acos"},
+                {"ATAN", "Atan"},
+                {"LOG", "Log"},
+                {"EXP", "Exp"},
+                {"LOG10", "Log10"},
+                {"POW", "Pow"},
+                {"SQRT", "Sqrt"},
+                {"ABS", "Abs"},
             };
 
-            var reString = InputText;
+            var retString = InputText;
+
             foreach (var key in _opMapper.Keys)
             {
-                reString = reString.Replace(key, _opMapper[key]);
+                retString = retString.Replace(key, _opMapper[key]);
             }
 
-            return reString;
+            return retString;
         }
 
         [RelayCommand]
@@ -99,11 +88,15 @@ namespace SciCalc.ViewsModels
             {
                 InputText = InputText.Substring(0, InputText.Length - 1);
             }
-
         }
 
         [RelayCommand]
+        private void NumberInput(string key)
+        {
+            InputText += key;
+        }
 
+        [RelayCommand]
         private void MathOperator(string op)
         {
             if (isSciOpWaiting)
@@ -111,9 +104,8 @@ namespace SciCalc.ViewsModels
                 InputText += ")";
                 isSciOpWaiting = false;
             }
-            InputText += $"{op}";
+            InputText += $" {op}";
         }
-
 
         [RelayCommand]
         private void RegionOperator(string op)
@@ -123,19 +115,14 @@ namespace SciCalc.ViewsModels
                 InputText += ")";
                 isSciOpWaiting = false;
             }
-            InputText += $"{op}";
+            InputText += $" {op}";
         }
 
         [RelayCommand]
         private void ScientificOperator(string op)
         {
-
             InputText += $"{op}(";
             isSciOpWaiting = false;
-
-
         }
-
     }
 }
-

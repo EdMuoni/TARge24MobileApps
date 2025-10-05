@@ -11,9 +11,11 @@ namespace SciCalc
     {
         const int WindowWidth = 480;
         const int WindowHeight = 800;
+
         public App()
         {
             InitializeComponent();
+
 #if WINDOWS
             Microsoft.Maui.Handlers.WindowHandler.Mapper.AppendToMapping(nameof(IWindow), (handler, view) =>
             {
@@ -25,7 +27,7 @@ namespace SciCalc
                 AppWindow appWindow = Microsoft.UI.Windowing.AppWindow.GetFromWindowId(windowId);
                 appWindow.Resize(new SizeInt32(WindowWidth, WindowHeight));
             });
-            
+
 #endif
 
             MainPage = new CalculatorPage();
