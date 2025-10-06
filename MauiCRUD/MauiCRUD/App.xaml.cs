@@ -1,17 +1,14 @@
-﻿using MauiPlanets.Views;
-
-#if WINDOWS
+﻿#if WINDOWS
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Windows.Graphics;
 #endif
 
-namespace MauiPlanets
+namespace MauiCRUD
 {
     public partial class App : Application
     {
-
-        const int WindowWidth = 400;
+        const int WindowWidth = 800;
         const int WindowHeight = 800;
 
         public App()
@@ -31,7 +28,7 @@ namespace MauiPlanets
             #endif
             });
 
-            MainPage = new StartPage();
+            MainPage = new AppShell();
         }
 
         //protected override Window CreateWindow(IActivationState? activationState)

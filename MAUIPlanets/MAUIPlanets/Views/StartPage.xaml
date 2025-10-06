@@ -78,7 +78,7 @@
             TranslationY="208"
             WidthRequest="76"
             HeightRequest="76"/>
-
+        
         <Image 
             x:Name="imgUranus"
             Opacity="0"
@@ -100,7 +100,7 @@
             TranslationY="-72"
             WidthRequest="200"
             HeightRequest="200"/>
-
+        
         <!--Intro box-->
         <Border
             x:Name="imgIntro"
@@ -138,9 +138,9 @@
                     Text="Explore Now"
                     Clicked="ExploreNow_Clicked"/>
             </VerticalStackLayout>
-
+            
         </Border>
-
+            
     </Grid>
-
+    
 </ContentPage>
