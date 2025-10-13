@@ -28,6 +28,7 @@ namespace MauiPlanets.Services
                     "https://solarsystem.nasa.gov/system/feature_items/images/75_mercury_carousel_1.jpg"
                 }
             },
+
             new()
             {
                 Name = "Venus",
@@ -50,6 +51,7 @@ namespace MauiPlanets.Services
                     "https://solarsystem.nasa.gov/system/feature_items/images/144_PIA00485_Venus_Caldera-800.jpg"
                 }
             },
+
             new()
             {
                 Name = "Earth",
@@ -69,6 +71,7 @@ namespace MauiPlanets.Services
                     "https://images.newscientist.com/wp-content/uploads/2019/09/09162708/iss048-e-2035_lrg.jpg?width=778"
                 }
             },
+
             new()
             {
                 Name = "Mars",
@@ -89,6 +92,7 @@ namespace MauiPlanets.Services
                     "https://www.openaccessgovernment.org/wp-content/uploads/2021/04/dreamstime_xxl_121672573-scaled.jpg"
                 }
             },
+
             new()
             {
                 Name = "Jupiter",
@@ -109,6 +113,7 @@ namespace MauiPlanets.Services
                     "https://solarsystem.nasa.gov/system/feature_items/images/13_PIA24237_Jupiter_Cyclones-800.jpg"
                 }
             },
+
             new()
             {
                 Name = "Saturn",
@@ -130,6 +135,7 @@ namespace MauiPlanets.Services
                     "https://solarsystem.nasa.gov/system/feature_items/images/153_saturn_carousel_3.jpg"
                 }
             },
+
             new()
             {
                 Name = "Uranus",
@@ -150,6 +156,7 @@ namespace MauiPlanets.Services
                     "https://solarsystem.nasa.gov/system/feature_items/images/88_carousel_uranus.jpg"
                 }
             },
+
             new()
             {
                 Name = "Neptune",
@@ -168,6 +175,107 @@ namespace MauiPlanets.Services
                     "https://solarsystem.nasa.gov/system/feature_items/images/82_carousel_neptune_1.jpg",
                     "https://solarsystem.nasa.gov/system/feature_items/images/86_carousel_neptune_5.jpg",
                     "https://solarsystem.nasa.gov/system/feature_items/images/84_neptune_carousel_2.jpg"
+                }
+            },
+
+            new()
+            {
+                Name = "Pluto",
+                Subtitle ="Former Dwarf Planet",
+                HeroImage = "pluto.png",
+                Description = "Pluto is a dwarf planet in the Kuiper belt, a " +
+                            "ring of bodies beyond Neptune. It was the first Kuiper " +
+                            "belt object to be discovered and is the largest known " +
+                            "plutino (objects in a 2:3 resonance with Neptune). " +
+                            "Pluto was discovered by Clyde Tombaugh in 1930 and was " +
+                            "considered the ninth planet from the Sun until 2006, " +
+                            "when it was reclassified as a dwarf planet by the " +
+                            "International Astronomical Union.",
+                AccentColorStart = Color.FromArgb("#4e4e4e"),
+                AccentColorEnd = Color.FromArgb("#8d9098"),
+                Images = new()
+                {
+                    "https://www.pngmart.com/files/22/Pluto-Planet-PNG-Pic.png",
+                    "https://www.pngmart.com/files/22/Pluto-Planet-PNG.png",
+                },
+
+            },
+
+            new()
+                {
+                    Name = "Ceres",
+                    Subtitle = "The largest asteroid",
+                    HeroImage = "ceres.png",
+                    Description = "Ceres is the largest object in the asteroid belt " +
+                                "between Mars and Jupiter. With a diameter of about 940 km, " +
+                                "it is the only dwarf planet located in the inner solar system. " +
+                                "Ceres is composed of a mixture of water ice and various hydrated " +
+                                "minerals such as carbonates and clay. It contains approximately " +
+                                "25% water by mass, much more than any other asteroid.",
+                    AccentColorStart = Color.FromArgb("#7a7a7a"),
+                    AccentColorEnd = Color.FromArgb("#b0b0b0"),
+                    Images = new()
+                    {
+                        "https://images.newscientist.com/wp-content/uploads/2020/08/10143522/10-aug_ceres-ocean.jpg?width=837",
+                        "https://news.berkeley.edu/wp-content/uploads/2020/08/Ceres_Occator_final-750px.jpg",
+                    }
+            },
+
+            new()
+            {
+                Name = "Haumea",
+                Subtitle = "The fast rotator",
+                HeroImage = "haumea.png",
+                Description = "Haumea is a dwarf planet located beyond Neptune's orbit. " +
+                            "It was discovered in 2004 by a team at the Sierra Nevada Observatory " +
+                            "in Spain, and its name comes from the Hawaiian goddess of fertility " +
+                            "and childbirth. Haumea is one of the fastest rotating large objects " +
+                            "in the solar system, completing a full rotation in just under four hours.",
+                AccentColorStart = Color.FromArgb("#7a7a7a"),
+                AccentColorEnd = Color.FromArgb("#b0b0b0"),
+                Images = new()
+                {
+                    "https://media.istockphoto.com/id/953189348/photo/haumea-dwarf-planet.jpg?s=1024x1024&w=is&k=20&c=J_bi6JuFVuQDryR__Kvdi3JBaDwIo-lLaZT7DL_bA9c=",
+                    "https://media.istockphoto.com/id/1178503587/photo/dwarf-planet-haumea.jpg?s=1024x1024&w=is&k=20&c=KzFUY6ISpdlTCJnlBuPIUj85iiZBETZ43FCQQCfh8AQ=",
+                }
+            },
+
+            new()
+            {
+                Name = "Makemake",
+                Subtitle = "The bright one",
+                HeroImage = "makemake.png",
+                Description = "Makemake is a dwarf planet located in the Kuiper belt, " +
+                            "a region of the solar system beyond Neptune that is populated by " +
+                            "small icy bodies. It was discovered in 2005 by a team led by " +
+                            "Michael E. Brown at the Palomar Observatory in California. " +
+                            "Makemake is named after the creator deity of the Rapa Nui people " +
+                            "of Easter Island.",
+                AccentColorStart = Color.FromArgb("#7a7a7a"),
+                AccentColorEnd = Color.FromArgb("#b0b0b0"),
+                Images = new()
+                {
+                    "https://astronz.nz/cdn/shop/articles/makemake.png?v=1682129134",
+                    "https://cdn.eso.org/images/newsfeature/eso1246a.jpg",
+                }
+
+            },
+
+            new()
+            {
+                Name = "Eris",
+                Subtitle = "The scattered disc object",
+                HeroImage = "eris.png",
+                Description = "Eris is a dwarf planet located in the scattered disc, " +
+                            "a distant region of the solar system that is populated by small icy bodies. " +
+                            "It was discovered in 2005 by a team led by Michael E. Brown at the Palomar " +
+                            "Observatory in California. Eris is named after the Greek goddess of strife and discord.",
+                AccentColorStart = Color.FromArgb("#7a7a7a"),
+                AccentColorEnd = Color.FromArgb("#b0b0b0"),
+                Images = new()
+                {
+                    "https://media.istockphoto.com/id/1044815536/photo/eris-dwarf-planet-rotating-in-its-own-orbit-in-the-outer-space-3d-rendering.jpg?s=1024x1024&w=is&k=20&c=o79le10-Hnaqcj4KeFoIf3GkUQG0SMdYRDx9aiEeDOQ=",
+                    "https://images-assets.nasa.gov/image/PIA03034/PIA03034~orig.jpg?w=603&h=200&fit=crop&crop=faces%2Cfocalpoint",
                 }
             },
         };
